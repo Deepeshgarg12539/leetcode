@@ -1,0 +1,10 @@
+class Solution(object):
+    def singleNumber(self, nums):
+        p=[]
+        t=0
+        for i in nums:
+            if nums.count(i)==1:
+                p.append(i)
+                t+=1
+            if t==2:
+                return p
