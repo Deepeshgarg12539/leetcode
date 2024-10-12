@@ -1,0 +1,4 @@
+class Solution(object):
+    def findDuplicate(self, nums):
+        s=set(nums)
+        return ((sum(nums)-sum(s))/(len(nums)-len(s)))
